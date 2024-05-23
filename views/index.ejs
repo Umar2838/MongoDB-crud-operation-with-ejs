@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CRUD Operation</title>
+</head>
+<body>
+    <div class="w-full h-full bg-zinc-900 text-white p-10" >
+       <div class="nav w-1/6 rounded-lg p-2 text-center m-2 bg-yellow-500" >
+        <a href="/read" >See all users</a>
+       </div>
+        <h1 class="text-3xl mb-3 tracking-tighter" >Create User </h1>
+
+
+            <form  action="/create" method="post" >
+                <input type="text" class="px-5 py-2 bg-transparent border-2 rounded-lg outline-none border-zinc-500 " name="name" placeholder="Name" >
+                <input type="email" class="px-5 py-2 bg-transparent border-2 rounded-lg outline-none border-zinc-500 "name="email" placeholder="Email" >
+                <input type="text" class="px-5 py-2 bg-transparent border-2 rounded-lg outline-none border-zinc-500 "name="image" placeholder="Image url" >
+                <input type="submit" class="px-5 py-2 bg-blue-500 rounded-lg ml-3" value="Create user" >
+                
+            </form>
+     
+    </div>
+</body>
+</html>
